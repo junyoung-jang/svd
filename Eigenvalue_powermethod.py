@@ -12,7 +12,13 @@ def powerMethod(matrix, iterations):
 
 
 # Deflation method to find the next eigenvalue and eigenvector
-# deflection method have 2 methods but
+# deflection method have 2 methods but to represent svd using Hotelling's deflation method is efficient
+
+
+def hotelingDeflation(matrix, eigenvalue, eigenvector):
+    after_deflation = matrix - eigenvalue * np.outer(eigenvector, eigenvector)
+    return powerMethod(after_deflation, 100)  
+# Call powerMethod on the deflated matrix
 
 
 
