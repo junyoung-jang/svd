@@ -5,11 +5,8 @@ def matrixProduct(matrix1, matrix2):
     a2, n = matrix2.shape
 
     if a1 != a2:
-        raise ValueError(
-             print("Cannot do matrix product. please check matrixs dimension")
-        )
-
-
+        raise ValueError("Cannot do matrix product. please check matrixs dimension")
+        
     matrix2_transpose = matrix2.T
 
     mn = np.zeros((m, n))
