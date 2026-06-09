@@ -7,10 +7,10 @@ at = a.T
 
 ### matrix product
 
-matrixProduct(a, at)
+aat = matrixProduct(a, at)
 
+print(aat)
 
-print(np.allclose(ata, a @ at))
 
 
 
