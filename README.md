@@ -26,6 +26,6 @@ Power Method와 Hoteling Deflation을 사용하여 $${A^TA}$$의 Eigenvalues와 
 ## 진행 상황
 - 1단계 : 행렬곱 구현 (**CLEAR**)
 - 2단계 : POWER METHOD 구현 (**CLEAR**)
-- 3단계 : HOTELING DEFLATION 구현 (NOT YET)
+- 3단계 : HOTELING DEFLATION 구현 (**CLEAR**)
 - 4단계 : 임의의 이미지로 시험 (NOT YET)
 - 5단계 : 임의의 유동장으로 시험 (NOT YET)
