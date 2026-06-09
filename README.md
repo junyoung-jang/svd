@@ -1,4 +1,4 @@
-## 목표: 
+## 목표
 ARRAY나 MATRIX 등을 제외한 NUMPY 함수를 사용하지 않고 SVD 및 POD를 구현해서 IMAGE RECONSTRUCTION, 더 나아가 FLOW FIELD의 RECONSTRUCTION 구현
 
 ## 기간 
