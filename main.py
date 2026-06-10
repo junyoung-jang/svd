@@ -53,3 +53,6 @@ for i in range(len(image_eigenvalues)):
 print(image_diagnoal)
 print(image_diagnoal.shape)
 
+######## PROGRESS ################
+
+#### NEED TO FIX EIGENVALUE BECAUSE SOME OF VALUES ARE NEGATIVE
