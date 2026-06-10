@@ -48,7 +48,7 @@ image_eigenvalues, image_eigenvectors = ep.hotellingDeflation(image_aat, 20)
 print(len(image_eigenvalues))
 image_diagnoal = np.zeros_like(image_aat)
 for i in range(len(image_eigenvalues)):
-    image_diagnoal[i, i] = image_eigenvalues[i]
+    image_diagnoal[i, i] = np.sqrt(image_eigenvalues[i])
 
 print(image_diagnoal)
 print(image_diagnoal.shape)
