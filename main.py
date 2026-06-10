@@ -1,7 +1,7 @@
 import numpy as np
 from matrix_product import matrixProduct
 import Eigenvalue_powermethod as ep
-from PIL import Image
+
 
 # below is the test code for the power method and deflation method, you can uncomment it to run the test.
 '''
@@ -37,7 +37,19 @@ print("Numpy's eigenvectors:", eigenvectors)
 
 # Let reconstruct arbitrary image using SVD and power method
 
+from PIL import Image
+image = Image.open("UDONG.webp").convert('L')
+image_array = np.array(image)
+## print(image_array)
+# compute the SVD of the image using power method and deflation method
+image_aat = matrixProduct(image_array, image_array.T)
+print(image_aat.shape)
+image_eigenvalues, image_eigenvectors = ep.hotellingDeflation(image_aat, 20)
+print(len(image_eigenvalues))
+image_diagnoal = np.zeros_like(image_aat)
+for i in range(len(image_eigenvalues)):
+    image_diagnoal[i, i] = image_eigenvalues[i]
 
-
-
+print(image_diagnoal)
+print(image_diagnoal.shape)
 
